@@ -1,6 +1,6 @@
 <?php
 
-class RepositorioPersona {
+class InterfazPersona {
  
     public static function obtener_todos($conexion) {
         
