@@ -4,7 +4,7 @@ include_once 'app/Conexion.inc.php';
 
 include_once 'app/Persona.inc.php';
 
-include_once 'app/RepositorioPersona.inc.php';
+include_once 'app/InterfazPersona.inc.php';
 
 
 Conexion::abrir_conexion();
@@ -20,7 +20,7 @@ for ($personas = 0; $personas < 100; $personas++) {
     $idUbicacion = rand(0,100);
 
     $persona = new Persona($nickname, $nombre, $apellido, '',$sexo,$correo,$password,$idUbicacion);
-    RepositorioPersona::insertar_persona(Conexion::obtener_conexion(), $persona);
+    InterfazPersona::insertar_persona(Conexion::obtener_conexion(), $persona);
 }
 function sea(){
     $sh = array("hombre","mujer");
