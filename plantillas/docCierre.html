@@ -1,0 +1,18 @@
+
+
+
+
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+    $('.navbar-nav [data-toggle="tooltip"]').tooltip();
+    $('.navbar-twitch-toggle').on('click', function(event) {
+        event.preventDefault();
+        $('.navbar-twitch').toggleClass('open');
+    });
+    
+   });
+	</script>
+</body>
+</html>
